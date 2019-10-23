@@ -1,9 +1,17 @@
-## python_chat
-Django Websocket chat
+## Example
+Re create chat app from Django Private Chat
+https://github.com/Bearle/django-private-chat
 
-## Channels Tutorial
-https://channels.readthedocs.io/en/latest/tutorial/part_1.html#creating-a-project
+## Virtual Environmant
+$ virtualenv venv
+$ virtualenv -p /usr/bin/python3 venv
+$ source venv/bin/activate
 
-## Installation
-$ pip3 install --upgrade setuptools
-$ pip3 install channels
+## Setup Django
+$ pip install Django
+$ django-admin startproject mysite
+$ cd mysite
+$ python manage.py runserver 0.0.0.0:8000
+
+## New app
+$ python manage.py startapp chat
